@@ -10,9 +10,9 @@
 
 
 Post.create([
-  { title: 'First Post', body: 'First Body' },
-  { title: 'Second Post', body: 'Second Body' },
-  { title: 'Third Post', body: 'Third Body' },
-  { title: 'Fourth Post', body: 'Fourth Body' },
-  { title: 'Fifth Post', body: 'Fifth Body' }
+  { title: 'First Post', body: 'First Body', user_id: 1 },
+  { title: 'Second Post', body: 'Second Body', user_id: 1 },
+  { title: 'Third Post', body: 'Third Body', user_id: 1 },
+  { title: 'Fourth Post', body: 'Fourth Body', user_id: 1 },
+  { title: 'Fifth Post', body: 'Fifth Body', user_id: 1 }
 ])
