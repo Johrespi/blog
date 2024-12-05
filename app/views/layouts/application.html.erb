@@ -21,12 +21,12 @@
     <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
     <link rel="stylesheet" href="https://cdn.simplecss.org/simple.css">
   </head>
-
-
-  <%=render partial: "layouts/navbar" %>
   <body>
+     <%=render partial: "layouts/navbar" %>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
     <%= yield %>
   </body>
+
+   <%=render partial: "layouts/footer"%>
 </html>

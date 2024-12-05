@@ -20,6 +20,10 @@ class PostsController < ApplicationController
   def edit
   end
 
+  def myposts
+    @post = Post.where(user_id: current_user.id)
+  end
+
   # POST /posts or /posts.json
   def create
     @post = Post.new(post_params)
@@ -66,6 +70,6 @@ class PostsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def post_params
-      params.expect(post: [ :title, :body ])
+      params.expect(post: [ :title, :body, :user_id ])
     end
 end
